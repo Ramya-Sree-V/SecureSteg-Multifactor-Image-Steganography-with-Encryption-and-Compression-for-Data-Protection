@@ -1,4 +1,4 @@
-# Secure Steganography and Image Encryption Application
+# Secure Steganography Application Using Image Encryption & Image Compression
 
 A Python-based GUI application that allows users to hide, encrypt, and compress text messages within images securely. The project uses steganography techniques combined with AES encryption and file compression for enhanced security and efficient storage.
 
