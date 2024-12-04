@@ -1,0 +1,6 @@
+Pillow==9.2.0          # For image processing
+cryptography==41.0.3   # For encryption (if using encryption for securing data)
+numpy==1.23.5          # For numerical operations, if needed
+tkinter                # GUI development (built-in, does not require installation)
+pyinstaller==5.13.0    # To package your application (if creating an executable)
+opencv-python==4.8.1.78 # For advanced image and video processing, if applicable
