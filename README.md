@@ -14,10 +14,10 @@ A Python-based GUI application that allows users to hide, encrypt, and compress 
 ## Technologies Used
 - **Programming Language:** Python
 - **Libraries:**
-  -- Tkinter: For creating the GUI
-  -- Pillow: For image processing
-  -- Cryptography: For AES encryption and decryption
-  -- zlib: For compressing and decompressing
+  - Tkinter: For creating the GUI
+  - Pillow: For image processing
+  - Cryptography: For AES encryption and decryption
+  - zlib: For compressing and decompressing
 
 ## How to Use
 - **Run the application:**
@@ -25,17 +25,17 @@ A Python-based GUI application that allows users to hide, encrypt, and compress 
   python app.py
   ```
 - **Select an image:**
-  -- Click on "Open Image" to choose an image file for encoding or decoding.
+  - Click on "Open Image" to choose an image file for encoding or decoding.
 - **Hide a message:**
-  -- Enter the message in the provided text area.
-  -- Click "Hide Data" to embed the message into the selected image.
+  - Enter the message in the provided text area.
+  - Click "Hide Data" to embed the message into the selected image.
 - **Encrypt and Compress:**
-   -- Click "Compress" to encrypt and compress or click on "Hide & Encrypt" to only hide and encrypt.
-  -- The encryption key and IV will be displayed. Save them for decryption
+   - Click "Compress" to encrypt and compress or click on "Hide & Encrypt" to only hide and encrypt.
+  - The encryption key and IV will be displayed. Save them for decryption
 - **Decrypt and Decompress:**
-  -- Use the "Decompress" option to extract the message from the secured image.
+  - Use the "Decompress" option to extract the message from the secured image.
 - **View results:**
-  -- The hidden message and any decoded content will appear in the text area.
+  - The hidden message and any decoded content will appear in the text area.
 
 
 ## File Structure
