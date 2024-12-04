@@ -18,6 +18,12 @@ A Python-based GUI application that allows users to hide, encrypt, and compress 
   - Pillow: For image processing
   - Cryptography: For AES encryption and decryption
   - zlib: For compressing and decompressing
+ 
+## Installation
+To install the required dependencies, run:
+```bash
+pip install -r requirements.txt
+```
 
 ## How to Use
 - **Run the application:**
