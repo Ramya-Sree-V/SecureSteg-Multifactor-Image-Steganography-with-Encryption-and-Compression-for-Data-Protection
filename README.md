@@ -1,15 +1,25 @@
-# Secure Steganography Application Using Image Encryption & Image Compression
+# 🔐 SecureSteg — PNG Steganography with Compression & AES Encryption
 
-A Python-based GUI application that allows users to hide, encrypt, and compress text messages within images securely. The project uses steganography techniques combined with AES encryption and file compression for enhanced security and efficient storage.
+**SecureSteg** is a Python GUI application that securely **embeds**, **compresses**, and **encrypts** secret text messages into **PNG images** using:
 
-## Features
-- **Message Encoding:** Hide secret text messages in images using Least Significant Bit (LSB) steganography.
-- **Message Decoding:** Extract hidden messages from steganographed images.
-- **Encryption:** Secure the steganographed image using AES encryption (CFB mode) with randomly generated keys and IVs.
-- **Decryption:** Decrypt encrypted images using the provided keys and IVs.
-- **Compression:** Compress encrypted images using zlib to reduce file size.
-- **Decompression:** Decompress compressed image files for further processing.
-- **User-Friendly Interface:** Intuitive GUI built with Tkinter for easy usage.
+- 🧬 **LSB (Least Significant Bit) steganography**
+- 🗜️ **zlib compression**
+- 🔐 **AES encryption (CFB8 mode)**
+
+It also allows you to **decrypt** and **extract** messages from previously encrypted stego images. Built with an intuitive interface using Tkinter.
+
+---
+
+## ✨ Features
+
+- 💬 **Text Embedding**: Hide plaintext messages in `.png` images using LSB steganography.
+- 🗜️ **Compression**: Messages are compressed using `zlib` before embedding for size optimization and added obfuscation.
+- 🔐 **AES Encryption**: Encrypt the stego image using AES-CFB8 for added protection.
+- 🕵️ **Decryption & Reveal**: Load encrypted images, decrypt them using key/IV, and extract the original hidden message.
+- 🖼️ **GUI**: Clean, user-friendly interface built with Tkinter for a smooth user experience.
+
+> 🔒 **Important**: Encryption keys and IVs are not stored. Please save them safely — they are essential for decrypting the hidden message.
+
 
 ## Technologies Used
 - **Programming Language:** Python
@@ -30,18 +40,20 @@ pip install -r requirements.txt
   ```bash
   python app.py
   ```
-- **Select an image:**
-  - Click on "Open Image" to choose an image file for encoding or decoding.
-- **Hide a message:**
-  - Enter the message in the provided text area.
-  - Click "Hide Data" to embed the message into the selected image.
-- **Encrypt and Compress:**
-   - Click "Compress" to encrypt and compress or click on "Hide & Encrypt" to only hide and encrypt.
-  - The encryption key and IV will be displayed. Save them for decryption
-- **Decrypt and Decompress:**
-  - Use the "Decompress" option to extract the message from the secured image.
-- **View results:**
-  - The hidden message and any decoded content will appear in the text area.
+- **Hide a Message:**
+  - Click "Open Image" to select a .png image.
+  - Type your secret message into the text box.
+  - Click "Hide Data" to embed the message using LSB.
+  - Click "Hide & Encrypt" to encrypt the image.
+  - Save the Key and IV shown after encryption — you'll need them to decrypt the image later.
+
+- **Compress:**
+  - Click "Compress" to reduce the image size post-embedding/encryption (optional but enhances security).
+- **Reveal a Message:**
+  - Click "Open Image" to load the encrypted image.
+  - Enter the correct Key and IV, then click "Decrypt & Show".
+  - Or, click "Show Data" for non-encrypted hidden messages.
+  
 
 
 ## File Structure
@@ -58,10 +70,10 @@ pip install -r requirements.txt
 
 
 ## Example
-- Encode a message into an image.
-- Encrypt and compress the steganographed image.
-- Share the compressed file securely.
-- Use the decryption key and IV to retrieve the original message.
+- Encode a message into a PNG image.
+- Encrypt the steganographed image and save the resulting secure image.
+- Share the encrypted .png securely over a network or storage medium.
+- The recipient uses the shared Key and IV to decrypt the image and retrieve the original hidden message.
 
 ## Contribution
 Contributions are welcome! Feel free to open issues or submit pull requests.
